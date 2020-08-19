@@ -1,9 +1,9 @@
 @import "~normalize.css";
 
-@import "_variables";
+@import "_variables.scss";
 
 @import "modules/hambureger.scss";
-
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@450;500&display=swap');
 html {
   box-sizing: border-box;
 }
@@ -20,6 +20,7 @@ body {
     rgba(18, 25, 79, 0.804359243697479) 0%,
     rgba(62, 21, 62, 0.9136029411764706) 100%
   );
+  
 }
 .header {
   grid-area: header;
@@ -63,8 +64,7 @@ body {
     color: rgb(253, 239, 246);
     text-decoration: none;
     font-size: 20px;
-    font-weight: 500;
-    font-family: monospace;
+    font-family: 'Changa', sans-serif;
     display: block;
     &--homepage {
       color: rgb(252, 176, 208);
@@ -116,7 +116,6 @@ body {
     &__link {
       margin: 2vh 1vw;
       font-size: 25px;
-      font-weight: 600;
     }
   }
   .hamburger {

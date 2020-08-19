@@ -26,7 +26,5 @@ hamburgerMenu.addEventListener("click", () => {
   nav.classList.toggle('navigation--open');
 });
 
-const countDown = () => {
-  console.log(moment().startOf('day').fromNow())
-}
-countDown()
+const countDown = moment().startOf('day').fromNow();
+console.log(countDown);
